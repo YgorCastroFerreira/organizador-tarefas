@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../../component/header/Header'
 import './index.scss'
-import Atividades from '../../component/atividades/atividades'
+import Atividades from '../../component/atividades/atividades.jsx'
 import { LISTA_MOCK } from '../../mock/lista.mock'
 
 const Home = ({lista}) => {
