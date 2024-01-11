@@ -1,0 +1,16 @@
+@use '../../sass/global' as *;
+
+
+.header {
+    background-color: $blue;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: left;
+    align-items: end;
+    height: 10vh;
+    width: 100%;
+    padding-left: 5vh;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+
+}

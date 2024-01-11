@@ -1,0 +1,39 @@
+@use '../../sass/global' as *;
+
+.modal{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: $font-gray;
+    font-family: $font;
+    font-weight: normal;
+    
+
+    .modal p{
+        text-align: center;
+    }
+    .modal___img{
+        margin-top: 0.45vh;
+        height: 186;
+        width: 2.5vh;
+        cursor: pointer;
+    }
+
+    .modal___section p{
+        cursor: pointer;
+    }
+
+
+    .modal___section{
+
+        background: rgba(1, 9, 28, 0.75);
+        border-radius: 10px;
+        text-align: start;
+        font-size: 2.5vh;
+        width: 50vh;
+        padding: 5px;
+        margin-left: 25px;
+        font-weight: normal;
+    }
+}
+

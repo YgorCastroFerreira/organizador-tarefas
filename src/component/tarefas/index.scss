@@ -1,0 +1,30 @@
+@use '../../sass/global' as *;
+
+.tarefas{
+    color: $blue;
+    background-color:white;
+    font-size: 1.6vh;
+    font-weight: bolder;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h1{
+        margin:0;
+        padding: 0;
+    }
+    h1:hover{
+        cursor: pointer;
+        color: $font-hover;
+    }
+
+    height: 7vh;
+    width: 25vh;
+    border-top-left-radius: 1.5vh;
+    border-top-right-radius: 1.5vh;
+    border-bottom: 0;
+    
+   
+}

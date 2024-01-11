@@ -1,0 +1,55 @@
+@use '../../sass/global' as *;
+
+.editar{
+    width: 75vh;
+    height: 50vh;
+    display: grid;
+    grid-auto-flow: row;
+    font-family: $font;
+    background-color: white;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+
+    .editar___botoes{
+        display: grid;
+        grid-auto-flow: column;
+        column-gap: 15px;
+    }
+
+    .editar___botao1{
+        width: 28vh;
+        height: 9vh;
+        border: 0;
+        border-radius: 10px;
+        background-color: $blue;
+        font-weight: bolder;
+        color: white;
+        font-size: 18px;
+    }
+
+    .editar___botao1:hover{
+        cursor: pointer;
+        background-color: crimson;
+        transform: translateY(-7px);
+        transition-duration: 0.5s;
+    }
+
+    .editar___botao2{
+        width: 28vh;
+        height: 9vh;
+        border-radius: 10px;
+        border-width: 1px;
+        background-color: white;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .editar___botao2:hover{
+        cursor: pointer;
+        color: white;
+        background-color:yellowgreen;
+        transform: translateY(-7px);
+        transition-duration: 0.5s;
+    }
+}

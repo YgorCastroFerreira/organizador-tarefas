@@ -1,0 +1,86 @@
+@use '../../sass/global' as *;
+
+.atividades{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    margin-right: 15vh;
+
+    
+    
+    .atividades___tabela{
+        display: grid;
+        grid-auto-flow: column;
+        
+        color: $font-gray;
+        font-family: $font;
+        background-color: $back-gray;
+
+        margin-top: 5vh;
+        width: 100vh;
+    }
+
+    .atividades___tabela p{
+        font-weight: bolder;
+    }
+
+    li{
+        list-style-type: none;
+    }
+
+    img{
+        width:2.5vh;
+    }
+
+    .atividades___hr{
+        width: 45vh;
+    }
+    .atividades___hr3{
+        width: 15vh;
+    }
+   
+    .atividades___icons{
+        width: 3vh;
+        cursor: pointer;
+    }
+
+    // .atividades___col1{
+    //     font-size: 2.6vh;
+    // }
+
+    .atividades___modal:hover{
+        cursor: pointer;
+    }
+
+    .atividades___modal{
+        cursor: pointer;
+    }
+
+    .atividades___modalDescription{
+        background-color: white;
+        color: $font-gray;
+    }
+
+    .atividades___colMod{
+        text-align: left;
+        width: 25vh;
+    }
+    .atividades___col1{
+        width: 30vh;
+    }
+    .atividades___col2{
+        text-align: center;
+    }
+    .atividades___col3{
+        text-align: center;
+    }
+
+    .atividades___plus:hover{
+        cursor: pointer;
+        transform: translateY(-3px);
+    }
+    
+
+}
