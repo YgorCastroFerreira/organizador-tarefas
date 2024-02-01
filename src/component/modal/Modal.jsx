@@ -20,9 +20,9 @@ const Modal = ({lista}) => {
             {/* {<p onMouseEnter={InfoOn}>
                 *
             </p>} */}
-            <li>
-                <img src={plus} onMouseEnter={InfoOn} className='modal___img'></img>
-            </li>
+            
+            <img src={plus} onMouseEnter={InfoOn} className='modal___img'></img>
+           
 
 
 

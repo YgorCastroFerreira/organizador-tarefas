@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useCallback } from 'react'
 import './index.scss'
+import {useState} from "react";
 import check from '../../icons/check.svg'
 import del from '../../icons/del.svg'
 import edit from '../../icons/edit.svg'
@@ -9,7 +10,8 @@ import Modal from '../modal/Modal'
 
 const atividades = ({lista}) => {
 
-
+    let [status, setStatus] = useState();
+   
   return (
     <div className='atividades'>
                
@@ -50,22 +52,32 @@ const atividades = ({lista}) => {
                 <hr className='atividades___hr'></hr>
                 <ul>
                     {lista.map((task) => {
-                        if( task.completed === true){
-
+                        if(task.completed === true){
                             return (
                                 <li>
-                                    <img src={check} alt='error...'></img>
+                                    <img 
+                                        src={check} 
+                                        alt='error...'
+                                        onClick={()=>{
+                                            setStatus(task.completed=false)}
+                                        }
+                                        ></img>
                                 </li>
                             )
                         }else{
                             return(
                                 <li>
-                                    <img src={uncheck} alt='error...'></img>
+                                    <img 
+                                        src={uncheck} 
+                                        alt='error...'
+                                        onClick={()=>{
+                                            setStatus(task.completed=true)}
+                                        }
+                                        ></img>
                                 </li>
                             )
                         }
                     }                        
-                        
                     )} 
                 </ul>
             </div>
