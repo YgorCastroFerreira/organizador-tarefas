@@ -10,7 +10,7 @@ import Modal from '../modal/Modal'
 
 const atividades = ({lista}) => {
 
-    let [status, setStatus] = useState();
+    // let [status, setStatus] = useState();
    
   return (
     <div className='atividades'>
@@ -58,21 +58,23 @@ const atividades = ({lista}) => {
                                     <img 
                                         src={check} 
                                         alt='error...'
-                                        onClick={()=>{
-                                            setStatus(task.completed=false)}
-                                        }
+                                        // onClick={()=>{
+                                        //     setStatus(task.completed=false)}
+                                        // }
                                         ></img>
                                 </li>
                             )
-                        }else{
+                        }else {
                             return(
                                 <li>
                                     <img 
                                         src={uncheck} 
                                         alt='error...'
-                                        onClick={()=>{
-                                            setStatus(task.completed=true)}
-                                        }
+                                        // onClick={()=>{
+                                        //     setStatus(task.completed=true)
+                                        // }
+                                        
+                                        // }
                                         ></img>
                                 </li>
                             )
