@@ -8,10 +8,8 @@ import uncheck from '../../icons/uncheck.svg'
 import plus from '../../icons/plus.svg'
 import Modal from '../modal/Modal'
 
-const atividades = ({lista}) => {
-
-    // let [status, setStatus] = useState();
-   
+const atividades = ({lista, checkboxEdit}) => {
+    
   return (
     <div className='atividades'>
                
@@ -51,31 +49,17 @@ const atividades = ({lista}) => {
                 <p>Status</p>
                 <hr className='atividades___hr'></hr>
                 <ul>
-                    {lista.map((task) => {
+                    {lista.map((task, index) => {
                         if(task.completed === true){
                             return (
                                 <li>
-                                    <img 
-                                        src={check} 
-                                        alt='error...'
-                                        // onClick={()=>{
-                                        //     setStatus(task.completed=false)}
-                                        // }
-                                        ></img>
+                                    <input type="checkbox" defaultChecked></input>
                                 </li>
                             )
                         }else {
                             return(
                                 <li>
-                                    <img 
-                                        src={uncheck} 
-                                        alt='error...'
-                                        // onClick={()=>{
-                                        //     setStatus(task.completed=true)
-                                        // }
-                                        
-                                        // }
-                                        ></img>
+                                    <input type="checkbox"></input>
                                 </li>
                             )
                         }
