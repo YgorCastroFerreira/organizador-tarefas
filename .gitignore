@@ -1,0 +1,8 @@
+# Ignore arquivos de configuração de SASS
+.sass-cache
+
+# Ignore a pasta node_modules
+node_modules
+
+# Ignore a pasta public
+public
